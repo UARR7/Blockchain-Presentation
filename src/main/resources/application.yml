@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: blockchain-kyc-system
+  
+  datasource:
+    url: jdbc:h2:mem:kycdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+blockchain:
+  ethereum:
+    rpc-url: http://localhost:8545
+    chain-id: 1337
+    contract-address: "0x0a6EebBd1381A0E0D17eAb1d2E6D773536FD7bFe"
+    admin-private-key: "0x3b3584fd3247e1f0900e67040a07fd05c69320be8ca4b03aae9652ffab91867d"
+    gas-price: 20000000000
+    gas-limit: 6721975
+  
+  ipfs:
+    host: localhost
+    port: 5001
+    protocol: http
+
+server:
+  port: 8080
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs       # OpenAPI JSON endpoint
+  swagger-ui:
+    path: /swagger-ui.html   # Swagger UI URL
+    display-request-duration: true
+    default-model-rendering: example
+    doc-expansion: none       # collapse endpoints by default
+    operations-sort: alpha    # sort operations alphabetically
+    show-common-extensions: true
+    deep-linking: true
+    persist-authorization: true
+
+
+

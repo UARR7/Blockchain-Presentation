@@ -1,0 +1,8 @@
+FULL NAME: John Doe
+DOCUMENT TYPE: PASSPORT
+DOCUMENT NUMBER: AB1234567
+DATE OF BIRTH: 1990-01-01
+NATIONALITY: Testland
+ISSUED: 2020-01-01
+EXPIRES: 2030-01-01
+NOTES: This is a fake test document for local development only.
